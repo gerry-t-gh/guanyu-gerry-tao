@@ -36,6 +36,19 @@ Also: Architecture & Design
 
 ## Projects
 
+**[Wolf — AI Job Hunter](https://github.com/guanyu-gerry-tao/wolf)**  
+AI-powered job hunting CLI tool and MCP server — finds roles, tailors resumes, fills application forms, and drafts outreach automatically.
+- Covers the full job application pipeline: discovery, resume tailoring, form auto-fill, and cold outreach
+- Runs as both a CLI and MCP server, invokable by other agents such as OpenClaw
+- Stack: TypeScript · Node.js · Claude API · Playwright · SQLite · Gmail API
+
+**[PromptOps Studio](https://github.com/guanyu-gerry-tao/promptops-studio)**  
+Full-stack platform for testing and evaluating RAG pipelines and AI applications.
+- Upload knowledge base documents, trigger indexing into Weaviate with hybrid search (vector + BM25 + reranking)
+- Run batch evaluations asynchronously via Kafka; inspect node-level LangGraph execution traces and audit logs
+- Three-service architecture: Next.js frontend · Spring Boot platform API · FastAPI + LangChain AI runtime
+- Stack: TypeScript · Java · Python · LangGraph · Weaviate · MySQL · Redis · Kafka · Docker
+
 **[OrderFlow](https://github.com/guanyu-gerry-tao/OrderFlow)**  
 Reliable e-commerce order workflow system built around checkout correctness, async recovery, and operator visibility.
 - Implements idempotent order creation, inventory reservation, payment authorization, transactional outbox, retries, and DLQ recovery
@@ -59,19 +72,6 @@ Serverless-style event-driven data pipeline for file ingestion, job tracking, va
 - Models S3-style file events, job lifecycle state, duplicate file detection, processing errors, and dead-letter evidence
 - Defines a shared storage contract with MySQL and DynamoDB adapters for local-first pipeline development
 - Stack: Python · MySQL · DynamoDB-style storage · pytest · API Gateway/Lambda-ready handler contracts
-
-**[Wolf — AI Job Hunter](https://github.com/guanyu-gerry-tao/wolf)**  
-AI-powered job hunting CLI tool and MCP server — finds roles, tailors resumes, fills application forms, and drafts outreach automatically.
-- Covers the full job application pipeline: discovery, resume tailoring, form auto-fill, and cold outreach
-- Runs as both a CLI and MCP server, invokable by other agents such as OpenClaw
-- Stack: TypeScript · Node.js · Claude API · Playwright · SQLite · Gmail API
-
-**[PromptOps Studio](https://github.com/guanyu-gerry-tao/promptops-studio)**  
-Full-stack platform for testing and evaluating RAG pipelines and AI applications.
-- Upload knowledge base documents, trigger indexing into Weaviate with hybrid search (vector + BM25 + reranking)
-- Run batch evaluations asynchronously via Kafka; inspect node-level LangGraph execution traces and audit logs
-- Three-service architecture: Next.js frontend · Spring Boot platform API · FastAPI + LangChain AI runtime
-- Stack: TypeScript · Java · Python · LangGraph · Weaviate · MySQL · Redis · Kafka · Docker
 
 ---
 
