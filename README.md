@@ -36,6 +36,30 @@ Previously: Architecture & Design
 
 ## Projects
 
+**[OrderFlow](https://github.com/guanyu-gerry-tao/OrderFlow)**  
+Reliable e-commerce order workflow system built around checkout correctness, async recovery, and operator visibility.
+- Implements idempotent order creation, inventory reservation, payment authorization, transactional outbox, retries, and DLQ recovery
+- Splits synchronous REST traffic from async event publishing/consumption through an API and worker runtime
+- Stack: Java · Spring Boot · PostgreSQL · Redis · Redpanda/Kafka · React · Docker · Kubernetes
+
+**[ServiceObs](https://github.com/guanyu-gerry-tao/ServiceObs)**  
+Cloud-native observability platform for telemetry ingestion, service health read models, incident detection, and timelines.
+- Ingests logs, metrics, and trace-like events, then aggregates latency, throughput, error, retry, and DLQ signals
+- Builds incident timelines and dashboard views for service health, trace evidence, and troubleshooting workflows
+- Stack: Go · PostgreSQL · Redpanda/Kafka · React · TypeScript · Docker · Playwright
+
+**[OperationAssistant](https://github.com/guanyu-gerry-tao/OperationAssistant)**  
+AI operations assistant for incident investigation with retrieval, diagnostic tools, guardrails, and evaluation reports.
+- Combines RAG over runbooks with read-only service diagnostic tools, citation checks, and human approval gates
+- Includes retrieval, tool-use, safety, and full-quality eval runners with deterministic and provider-backed modes
+- Stack: Python · FastAPI · PostgreSQL/pgvector · Redis · React · TypeScript · Docker · OpenAI-compatible APIs
+
+**[DataPulse](https://github.com/guanyu-gerry-tao/DataPulse)**  
+Serverless-style event-driven data pipeline for file ingestion, job tracking, validation, and result summaries.
+- Models S3-style file events, job lifecycle state, duplicate file detection, processing errors, and dead-letter evidence
+- Defines a shared storage contract with MySQL and DynamoDB adapters for local-first pipeline development
+- Stack: Python · MySQL · DynamoDB-style storage · pytest · API Gateway/Lambda-ready handler contracts
+
 **[Wolf — AI Job Hunter](https://github.com/guanyu-gerry-tao/wolf)**  
 AI-powered job hunting CLI tool and MCP server — finds roles, tailors resumes, fills application forms, and drafts outreach automatically.
 - Covers the full job application pipeline: discovery, resume tailoring, form auto-fill, and cold outreach
@@ -48,25 +72,6 @@ Full-stack platform for testing and evaluating RAG pipelines and AI applications
 - Run batch evaluations asynchronously via Kafka; inspect node-level LangGraph execution traces and audit logs
 - Three-service architecture: Next.js frontend · Spring Boot platform API · FastAPI + LangChain AI runtime
 - Stack: TypeScript · Java · Python · LangGraph · Weaviate · MySQL · Redis · Kafka · Docker
-
-**[Multi-Shelter Animal Adoption System](https://github.com/guanyu-gerry-tao/management-system-for-multi-shelter-animal-adoption)**  
-Java OOD system managing animal adoption workflows across multiple shelters. Built with a focus on clean architecture.
-- Three-layer design: Domain (Animal, Shelter, Adopter) · Service (Adoption, Transfer, Matching, Vaccination) · Strategy (composable matching rules)
-- Adopter–animal matching scored via pluggable strategies (breed, activity, lifestyle); new rules add without touching core services
-- AI-assisted natural-language explanation of match results via external API integration
-- Stack: Java 21 · Maven · JUnit · OOP / Strategy Pattern
-
-**[Raccoon AI Todolist](https://github.com/guanyu-gerry-tao/raccoon-study-todolist)**  
-Full-stack task management app with AI-powered planning via LangChain. MERN stack, microservices architecture, JWT auth.
-
-**[ATA — Automatic Team Assembler](https://github.com/guanyu-gerry-tao/ATA-Automatic-Team-Assembler)**  
-Vector-based team formation system that matches students by skills and preferences.
-
-**[World Model Hackathon 2026](https://github.com/guanyu-gerry-tao/2026-world-model-hackathon)**  
-24h hackathon project at Worlds in Action SF — Best World Models Implementation with PICO.
-
-**[AAsplit Gadget](https://github.com/guanyu-gerry-tao/AAsplit-gadget)**  
-Lightweight travel expense splitter built with Python and Google Sheets API.
 
 ---
 
