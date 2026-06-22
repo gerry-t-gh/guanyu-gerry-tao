@@ -1,4 +1,4 @@
-# Gerry Tao
+# Gerry
 
 **CS Graduate Student @ Northeastern University**  
 Full-Stack · Backend · AI  
